@@ -1,0 +1,138 @@
+* {
+    margin: 0;  
+    box-sizing: border-box;
+}
+
+
+#principal .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.principal{
+    background-color:#5ce1eb;
+    border: 4px solid #54D2DA;
+}
+
+div img{
+    width: 377px;
+    height: 370px;
+    border-radius: 110%;
+    border: 4px solid #54D2DA;
+    box-sizing: border-box;
+}
+
+.perfil {
+    width: 700px;
+    height: 215px;
+    margin-left: 30px;
+    background-color:#F9F8F8;
+    font-family: 'Roboto Slab';
+    border: 3px solid #C4C4C4;
+}
+
+.formacion {
+    width: 700px;
+    height: 215px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color:#F9F8F8;
+    font-family: 'Roboto Slab';
+    border: 3px solid #C4C4C4;
+}
+
+#secundario .contenedor1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidades{
+    width: 377px;
+    height: 200px;
+    margin-right: 30px;
+    margin-top: 30px;
+    background-color:#F9F8F8;
+    font-family: 'Roboto Slab';
+    border: 3px solid #C4C4C4;
+}
+
+.experiencia{
+    width: 700px;
+    height: 200px;
+    margin-right: -1px;
+    margin-top: 30px;
+    background-color:#F9F8F8;
+    font-family: 'Roboto Slab';
+    border: 3px solid #C4C4C4;
+}
+
+h3 {
+    background-color:#54D2DA;
+    font-family: Bold;
+    text-align: center;
+    height: 30px;
+}
+
+.principal h3
+{
+    background-color:#5ce1eb; 
+}
+
+.principal p{
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 15px ;
+    margin-right: 15px;
+    line-height: 25px;
+}
+
+ul{
+    font-size: 18px;
+}
+
+h1{
+    background-color:#54D2DA;
+    text-align: center;
+    height: 50px;
+}
+
+
+footer .footer {
+    margin-top: 30px;
+    background-color:#F9F8F8;
+    border: 3px solid #C4C4C4;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Bold;
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+
+.informacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto Slab';
+    padding-top: 1rem;
+}
+
+.informacion  a {
+    color: #54D2DA;
+    text-decoration: none;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+footer p {
+    text-align: center;
+}
