@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-
 #principal .contenedor {
     display: flex;
     flex-wrap: wrap;
