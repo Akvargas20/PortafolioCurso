@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+:root {
+  --fondo-principal: #5ce1eb;
+  --enlaces: #54d2da;
+  --actividades-ficha: #ebedef;
+  --estado-ficha: #f4f6f6;
+  --color-fondo: #000000;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+#contenido {
+  display: flex;
+  width: 100%;
+  /*justify-content: center;*/
+  flex-direction: column;
+  align-items: center;
+}
+
+.ficha {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "encabezado-ficha"
+    "actividades-ficha"
+    "estados-ficha";
+  width: 360px;
+  border: 4px solid #54d2da;
+  background-color: #54d2da;
+  margin: 20px 0px;
+}
+
+.encabezado-ficha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nombre-estudiante nombre-estudiante fotografia"
+    "enlaces enlaces fotografia";
+  grid-area: encabezado-ficha;
+  background-color: var(--fondo-principal);
+  border-radius: 10px;
+  padding: auto;
+  margin: auto;
+}
+
+.nombre-estudiante {
+  grid-area: nombre-estudiante;
+  text-align: center;
+  font-size: 10px;
+}
+
+.enlaces {
+  grid-area: enlaces;
+  background-color: var(--enlaces);
+  border-radius: 15px;
+  width: 130px;
+  padding-left: 45px;
+  margin: 10px;
+}
+
+.enlaces a {
+  color: var(--color-fondo);
+  text-decoration: none;
+}
+
+.enlace {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.enlace a{
+  width: 100%;
+}
+
+.fotografia {
+  grid-area: fotografia;
+  padding-right: 12px;
+  padding-top: 25px;
+}
+
+div img {
+  width: 150px;
+  height: 150px;
+  border-radius: 110%;
+  border: 4px solid #54d2da;
+  box-sizing: border-box;
+}
+
+.actividades-ficha {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo-actividades"
+    "encabezado-actividades"
+    "estado-actividades";
+  grid-area: actividades-ficha;
+  background-color: var(--actividades-ficha);
+  border-radius: 10px;
+}
+
+.titulo-actividades {
+  grid-area: titulo-actividades;
+  text-align: center;
+  background-color: var(--enlaces);
+  border-radius: 3px;
+  text-align: center;
+  border: 2px solid #54d2da;
+  font-size: 13px;
+}
+
+.prueba {
+  border: 1px solid #54d2da;
+  border-radius: 10px;
+}
+
+.encabezado-actividades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "item nombre estadouiux estadodev";
+  grid-area: encabezado-actividades;
+}
+
+.item {
+  grid-area: item;
+  text-align: center;
+}
+
+div p {
+  text-align: center;
+}
+
+.nombre {
+  grid-area: nombre;
+  text-align: justify;
+}
+
+.estadouiux {
+  grid-area: estadouiux;
+  text-align: center;
+}
+
+.estadodev {
+  grid-area: estadodev;
+  text-align: center;
+}
+
+.estado-actividades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nro enlace porcentajeuiux porcentajedev";
+  grid-area: estado-actividades;
+  text-align: center;
+}
+
+.nro {
+  grid-area: nro;
+}
+
+.enlace {
+  grid-area: enlace;
+}
+
+.porcentajeuiux {
+  grid-area: porcentajeuiux;
+}
+
+.porcentajedev {
+  grid-area: porcentajedev;
+}
+
+.estados-ficha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "estadohtml estadocss estadojs estadoui estadoux total";
+  grid-area: estados-ficha;
+  background-color: var(--estado-ficha);
+  border-radius: 10px;
+}
+
+.estadohtml {
+  grid-area: estadohtml;
+  background-color: var(--actividades-ficha);
+  border-radius: 50px;
+  text-align: center;
+  border: 2px solid #54d2da;
+}
+
+.estadocss {
+  grid-area: estadocss;
+  background-color: var(--actividades-ficha);
+  border-radius: 50px;
+  text-align: center;
+  border: 2px solid #54d2da;
+}
+
+.estadojs {
+  grid-area: estadojs;
+  background-color: var(--actividades-ficha);
+  border-radius: 50px;
+  text-align: center;
+  border: 2px solid #54d2da;
+}
+
+.estadoui {
+  grid-area: estadoui;
+  background-color: var(--actividades-ficha);
+  border-radius: 50px;
+  text-align: center;
+  border: 2px solid #54d2da;
+}
+
+.estadoux {
+  grid-area: estadoux;
+  background-color: var(--actividades-ficha);
+  border-radius: 50px;
+  text-align: center;
+  border: 2px solid #54d2da;
+}
+
+.total {
+  grid-area: total;
+  background-color: var(--actividades-ficha);
+  border-radius: 50px;
+  text-align: center;
+  border: 2px solid #54d2da;
+}
